@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', sans-serif;
+}
+
+/* Logo */
+.nav {
+  margin: 8% auto 5% auto;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 40%;
+  margin: 0 auto 10% auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: -3px 2px 28px -13px rgba(0,0,0,0.75);
+}
+
+/* Form */
+#form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 25px;
+  column-gap: 30px;
+}
+
+/* Display */
+.display-area {
+  margin-bottom: 20px;
+}
+
+.bill-area input {
+  position: relative;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(189, 41%, 97%);
+  padding: 5px 10px ;
+  width: 100%;
+}
+
+.display-area img {
+  width: 8px;
+  position: absolute;
+  top: 100;
+  left: 20;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+input:focus {
+  outline: none;
+  color: hsl(183, 100%, 15%);
+  border: 1px solid hsl(172, 67%, 45%);
+  }
+
+  #btn-custom {
+    padding-right: 10px;
+  }
+
+/* Buttons */
+.button-area {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 700;
+  background-color: hsl(183, 100%, 15%);
+  color:  hsl(0, 0%, 100%);
+  padding: 2px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-custom {
+  color: hsl(183, 100%, 15%);
+  opacity: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding-right: 20px;
+  height: 23px;
+}
+
+.btn:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  opacity: 90%;
+}
+
+.reset-area {
+  margin-top: 50px;
+}
+
+.reset-area .reset-btn {
+  position: relative;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  opacity: 20%;
+  cursor: pointer;
+}
+
+.reset-area .reset-btn:hover {
+  opacity: 90%;
+}
+
+/* Number of People */
+.people img {
+  width: 8px;
+  position: absolute;
+  top: 100;
+  left: 20;
+  margin-left: 10px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+::placeholder {
+  color: hsl(185, 41%, 84%);
+  padding: 5px;
+}
+
+/* Label */
+label {
+  color: hsl(183, 100%, 15%);
+  font-size: 12px;
+}
+
+
+/* Tip Area */
+.tip-area label {
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+}
+
+.person {
+  font-size: 10px;
+  color: hsl(185, 41%, 84%);
+  margin-top: -8px;
+  opacity: 40%;
+}
+
+.tip-area {
+  position: relative;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+}
+
+.tip-area h2 {
+  color: hsl(172, 67%, 45%);
+  text-align: right;
+}
+
+.tip-area-group {
+  padding-top: 10px;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Error Message */
+.error {
+  display: none;
+  font-size: 12px;
+  color: red;
+  margin-left: 20px;
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+ 
+  /* Container */
+  .container {
+    max-width: 900px;
+    height: fit-content;
+  }
+
+    /* Form */
+  #form {
+    position: relative;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  /* Buttons */
+.button-area {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+  padding: 15px 10px;
+}
+
+.btn-custom {
+  margin-right: 50px;
+  height: 80px;
+}
+
+.btn-custom::placeholder {
+  text-align: center;
+}
+
+/* Tip Area */
+.tip-amount-display,
+.total-amount-display {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.tip-area {
+  padding: 30px;
+}
+
+.tip-area h2 {
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.reset-btn {
+  font-size: 1.5rem;
+}
+
+.reset-area {
+  display: block;
+  margin-top: 60px auto 60px auto;
+}
+
+/* Label */
+label {
+  display: inline-block;
+  font-size: large;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  margin: 15px;
+}
+
+.tip-area label {
+  font-size: large;
+}
+
+.person {
+  display: inline-block;
+  font-size: large;
+  padding-top: -10px;
+}
+
+/* Input */
+.bill-area input {
+  font-size: 2.2rem;
+}
+
+.display-area img {
+  width: 1rem;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.people img {
+  width: 1rem;
+  margin-left: 15px;
+  margin-top: 20px;
+  z-index: 1;
+}
+}
