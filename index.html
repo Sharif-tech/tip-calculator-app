@@ -17,64 +17,50 @@
 </head>
 <body>
   <!-- Logo Area -->
-  <div class="nav title">
-    <img src="./images/logo.svg" alt="" srcset="">
-  </div>
+  <div class="nav title"><img src="./images/logo.svg" alt="logo" srcset="./images/logo.svg 1440w, ./images/logo.svg3750w"></div>
   <div class="container">
 
    <!-- Calculator -->
     <div class="cal-container">
-      <form action="" id="form">
+      <form action="POST" id="form">
 
         <div class="bill-area">
           <!-- Display -->
           <div class="display-area">
-            <label for="">Bill</label> <br>
-            <img src="./images/icon-dollar.svg" alt="" srcset="">
-            <input type="text" name="display" id="display" placeholder="0">
-          </div>
+            <label for="bill">Bill</label> <br>
+            <img src="./images/icon-dollar.svg" alt="dollar-sign" srcset="./images/icon-dollar.svg 256w, ./images/icon-dollar.svg 300w">
+            <input type="text" name="display" id="display" placeholder="0"></div>
   
           <!-- Buttons -->
-          <label for="">
-            Select Tip %
-          </label> <br>
-          <div class="button-area">
-            <button class="btn" id="btn" value="0.05">5%</button>
-            <button class="btn" id="btn" value="0.1">10%</button>
-            <button class="btn" id="btn" value="0.15">15%</button>
-            <button class="btn" id="btn" value="0.25">25%</button>
-            <button class="btn" id="btn" value="0.5">50%</button>
-            <input class="custom btn-custom" id="btn-custom" value="" placeholder="Custom"> </input>
-          </div>
+          <label for="select-tip">Select Tip %</label><br>
+          <div class="button-area"> <button class="btn" id="btn" value="0.05">5%</button>
+            <button class="btn" value="0.1">10%</button>
+            <button class="btn" value="0.15">15%</button>
+            <button class="btn" value="0.25">25%</button>
+            <button class="btn" value="0.5">50%</button>
+            <input name="custome" class="custom btn-custom" id="btn-custom" value="" placeholder="Custom"></input></div>
   
           <!-- Number of people -->
           <div class="people">
-            <label for=""> Number of People</label> <span class="error" id="error">Can't be zero</span> <br>
-            <img src="./images/icon-person.svg" alt="" srcset="">
-            <input type="text" name="" id="number-of-people" placeholder="0">
-          </div>
+            <label for="no-of-people"> Number of People</label> <span class="error" id="error">Can't be zero</span> <br>
+            <img src="./images/icon-person.svg" alt="" srcset="./images/icon-person.svg 256, ./images/icon-person.svg 300w">
+            <input type="text" name="number-of-people" id="number-of-people" placeholder="0"></div>
         </div>
 
         <div class="tip-area">
-
           <div class="tip-area-group">
             <div class="tip-amount">
-              <label for=""> Tip Amount</label>
-              <p class="person">/ person</p>
-            </div>
+              <label for="tip-amount"> Tip Amount</label>
+              <p class="person">/ person</p></div>
   
-            <div class="tip-amount-display">
-              <h2 id="tip-amount-display" value="0"> $0.00 </h2>
-            </div>
+            <div class="tip-amount-display"><h2 id="tip-amount-display"> $0.00 </h2></div>
   
             <div class="tip-total">
-              <label for=""> Total</label>
+              <label for="total"> Total</label>
               <p class="person">/ person</p>
             </div>
   
-            <div class="total-amount-display">
-              <h2 id="total-amount-display" > $0.00 </h2>
-            </div>
+            <div class="total-amount-display"><h2 id="total-amount-display" > $0.00 </h2></div>
           </div>
 
           <!-- Reset btn -->
@@ -90,8 +76,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Sharif Salman</a>.
-  </div>
+    Coded by <a href="#">Sharif Salman</a>.</div>
 
 <!-- Script -->
   <script src="./script.js"></script>
